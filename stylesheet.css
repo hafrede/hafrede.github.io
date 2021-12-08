@@ -1,0 +1,614 @@
+body{
+  background-color: #AA9A82;
+}
+
+/* portfolio page */
+img {
+  width: 375px;
+	height:375px;
+  border: 10px solid rgba(255, 255, 255, 0.39);
+  margin:1.66%;
+	background-size:cover;
+
+
+}
+h4 {
+  font-size: 24px;
+  color: #505050;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin: 1.66%;
+  font-weight: normal;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: 80px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.39);
+  border: none;
+  width:92%;
+
+}
+
+
+/* index page */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+p{
+  color: #505050;
+}
+.txt2{
+  width: max-content;
+  margin: 1px auto 64px;
+  position: relative;
+}
+.cover2{
+/*   background-color: yellow; */
+  font-size: 215%;
+  width: 100%;
+  background-color: #AA9A82;
+  font-weight: bold;
+  position: relative;
+  height: 60px;
+  margin: -71px auto;
+  animation: rev 4s 1.6s steps(30) forwards;
+  border-top-left-radius: 10px;
+}
+.cover2 b{
+  color: #808080;
+  animation: blink 4.7s forwards;
+  user-select: none;
+}
+
+
+.intro__container {
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  left: 20px;
+}
+
+.intro__page {
+  height: 100%;
+  width: 100%;
+  background-color: #AA9A82;
+  border-radius: 20px;
+}
+
+.intro__salut {
+  position: absolute;
+  font-size: 36px;
+  font-weight: bold;
+  top: 0;
+  left: 57%;
+}
+
+.slide-left-page {
+  -webkit-animation: slide-left-page ease 2s;
+          animation: slide-left-page ease 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.slide-left-salut {
+  -webkit-animation: slide-left-salut ease 1s;
+          animation: slide-left-salut ease 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/**
+* Right side intro
+**/
+.greetings {
+  font-weight: bold;
+  color: #ff5851;
+  border-right: 2px solid #AA9A82;
+  letter-spacing: 2px;
+}
+
+.intro__salut__container {
+  display: flex;
+}
+
+.city {
+  background-color: #AA9A82;
+  padding: 1px 3px;
+  border-radius: 5px;
+}
+.hello {
+  background-color: #AA9A82;
+  padding: 10px;
+  padding-right: 460px;
+  padding-left: 10px;
+  font-size: 1.5EM;
+  color: #505050;
+  border-radius:10px;
+}
+.intro__salut__content {
+  margin: auto;
+}
+
+/* Right side intro END*/
+@-webkit-keyframes slide-left-page {
+  0% {
+    transform: translate(100%, 0%);
+  }
+  50% {
+    transform: translate(-50%, 0%);
+    width: 50%;
+  }
+  100% {
+    transform: translate(5%, 10%);
+    width: 50%;
+  }
+}
+@keyframes slide-left-page {
+  0% {
+    transform: translate(100%, 0%);
+  }
+  50% {
+    transform: translate(-50%, 0%);
+    width: 50%;
+  }
+  100% {
+    transform: translate(5%, 10%);
+    width: 50%;
+  }
+}
+@-webkit-keyframes slide-left-salut {
+  0% {
+    opacity: 0;
+    transform: translate(200px, 45%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 45%);
+  }
+}
+@keyframes slide-left-salut {
+  0% {
+    opacity: 0;
+    transform: translate(200px, 45%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 45%);
+  }
+}
+
+
+
+
+
+
+/* contact page */
+
+.txt{
+  width: max-content;
+  margin: 160px auto 64px;
+  position: relative;
+}
+h1{
+
+  text-align: center;
+  font-family: "Montserrat", sans-serif, monospace;
+  color: #505050;
+}
+.cover{
+/*   background-color: yellow; */
+  font-size: 280%;
+  width: 100%;
+  background-color: #AA9A82;
+  font-weight: bold;
+  position: relative;
+  height: 40px;
+  margin: -67px auto;
+  animation: rev 3.3s 1.1s steps(21) forwards;
+}
+.cover b{
+  color: #808080;
+  animation: blink 11s forwards;
+  user-select: none;
+}
+.form{
+  text-align: center;
+}
+.form hr{
+  margin-top: 75px;
+  width: 380px;
+  color: #808080;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  animation: out 0.15s 6.2s linear forwards;
+}
+.form i{
+  font-size: 190%;
+  color: transparent;
+  animation: check 2s 6.3s linear forwards;
+}
+@keyframes rev{
+  0%{width: 100%; margin-right: 0;}
+  100%{width: 0%; margin-right: 0;}
+}
+@keyframes blink{
+  /*Before*/
+  0%{opacity: 1;}
+  2.5%{opacity: 0;}
+  5%{opacity: 1;}
+  7.5%{opacity: 0;}
+  10%{opacity: 1;}
+  11.5%{opacity: 0.4;}
+
+  /*Typing*/
+  11.75%{opacity: 1;}
+  41.75%{opacity: 1;}
+
+  /*After*/
+  42.5%{opacity: 0;}
+  45%{opacity: 1;}
+  47.5%{opacity: 0;}
+  50%{opacity: 1;}
+  52.5%{opacity: 0;}
+  55%{opacity: 1;}
+  57.5%{opacity: 0;}
+  100%{opacity: 0;}
+}
+@keyframes out{
+  0%{width: 360px; border: 1px solid #808080;}
+  95%{width: 17.5px; border: 1px solid #808080;}
+  100%{width: 0px; border: 1px solid rgba(0, 0, 0, 0);}
+}
+
+.float{
+  background-color: rgba(255, 255, 255, 0.39);
+  font-family: monospace;
+  margin: 39.5px auto;
+/*   box-shadow: -3.6px 3.6px 25px rgba(0, 0, 0, 0.5); */
+  max-width: 850px;
+  min-width: 350px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  animation: 0.6s flt linear forwards;
+  font-size: 155%;
+  border-radius: 15px;
+}
+@keyframes flt{
+  0%{opacity: 0; transform: translateY(50px);}
+  100%{opacity: 1; transform: translateY(0px);}
+}
+.float a{
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #505050;
+  border: 2px solid transparent;
+  width: 70px;
+  transition: 0.2s ease-in-out;
+
+/*   box-shadow: -3px 3px 2.3px rgba(0, 0, 0, 0.3); */
+}
+a b{
+  display: none;
+}
+.float a:hover{
+  border-bottom: 2px solid #808080;
+  width: 129px;
+}
+.float a:hover i{
+  font-weight: normal;
+}
+.float a:hover:last-child i{
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  h1{
+    font-size: 30px;
+  }
+  [class*="btn"] {
+    font-size: 180%;
+    width: 97%;
+    text-align: center;
+  }
+  [class*="float"] {
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: space-around;
+    width: 85%;
+    min-width: 350px;
+    line-height: 70px;
+  }
+  .float i{
+    position: fixed;
+    left: 30px;
+    margin-top: 19px;
+  }
+  .float a{
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.39);
+    border: 3px solid transparent;
+    margin-bottom: 30px;
+    width: 100%;
+    font-weight: bold;
+  }
+  .float a:hover{
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.39);
+    background-color: lightblue;
+  }
+  .float a i{
+    font-weight: bold;
+  }
+  .float a:hover i{
+    font-weight: bold;
+  }
+  a b{
+    display: inline;
+  }
+  .txt{
+    margin: 70px auto 64px;
+  }
+}
+
+
+/*
+ contact page menu bar
+ */
+
+body
+{
+  margin: 0;
+  padding: 0;
+
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #AA9A82;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.39);
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #505050;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 50px;
+  height: 513px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 280px;
+
+  background: rgba(255, 255, 255, 0.39);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 40px 0;
+  font-size: 22px;
+  position: relative;
+  left: -15px;
+color:#505050;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+/*
+ index menu bar
+ */
+ #menuToggle2
+ {
+   display: block;
+   position: absolute;
+   top: 50px;
+   left: 50px;
+
+   z-index: 1;
+
+   -webkit-user-select: none;
+   user-select: none;
+ }
+
+ #menuToggle2 a
+ {
+   text-decoration: none;
+   color: #232323;
+
+   transition: color 0.3s ease;
+ }
+
+ #menuToggle2 a:hover
+ {
+   color: #AA9A82;
+ }
+
+
+ #menuToggle2 input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+
+   cursor: pointer;
+
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+
+   -webkit-touch-callout: none;
+ }
+
+
+ #menuToggle2 span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+
+   background: #505050;
+   border-radius: 3px;
+
+   z-index: 1;
+
+   transform-origin: 4px 0px;
+
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+
+ #menuToggle2 span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+
+ #menuToggle2 span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+
+
+ #menuToggle2 input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #505050;
+ }
+
+
+ #menuToggle2 input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+
+
+ #menuToggle2 input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+
+
+ #menuToggle2 input:checked ~ ul
+ {
+   transform: none;
+ }
